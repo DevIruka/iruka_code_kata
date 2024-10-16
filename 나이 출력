@@ -1,0 +1,6 @@
+function solution(age) {
+    // 2022년도 기준.
+    // 2022 - 40 = 1982 + 1
+    let answer = (2022 - age + 1)
+    return answer
+}
