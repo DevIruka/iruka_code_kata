@@ -1,0 +1,10 @@
+function solution(n) {
+    let answer = 0;
+    const strofN = String(n);
+    const strArray = [...strofN];
+    const numArray = strArray.map((items) => Number(items));
+    numArray.forEach((num) => {
+        answer += num;
+    });
+    return answer
+}
