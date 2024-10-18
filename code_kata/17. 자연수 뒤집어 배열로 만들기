@@ -1,0 +1,10 @@
+function solution(n) {
+    let answer;
+    let strN = String(n);
+    strNarray = [...strN];
+    answer = strNarray.map((element) => {
+        return Number(element);
+    });
+    answer.reverse();
+    return answer
+}
