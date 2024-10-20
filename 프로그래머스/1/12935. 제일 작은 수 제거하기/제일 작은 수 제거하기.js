@@ -1,7 +1,6 @@
 function solution(arr) {
     let answer;
-    let newArr = [...arr]
-    let smallest = newArr.sort((a, b) => b - a).pop();
+    let smallest = Math.min(...arr)
     answer = arr.filter(function (item) {
         return item !== smallest;
     });
