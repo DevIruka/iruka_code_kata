@@ -3,7 +3,7 @@ function solution(s) {
         return false;
     }
     for (let i = 0; i < s.length; i++) {
-        if (isNaN(s[i]) || s[i] === ' ') {
+        if (isNaN(s[i])) {
             return false;
         }
     }
