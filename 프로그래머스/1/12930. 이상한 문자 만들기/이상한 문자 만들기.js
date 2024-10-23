@@ -14,6 +14,5 @@ function solution(s) {
         let newItems = arrofItems.join("");
         return newItems;
     });
-    console.log(answerArray);
     return (answer = answerArray.join(" "));
 }
