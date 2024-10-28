@@ -14,31 +14,18 @@ function solution(a, b) {
         NOV: 30,
         DEC: 31,
     };
+    let dayOfTheWeek = ["THU", "FRI", "SAT", "SUN", "MON", "TUE", "WED"];
     let time = 0;
     for (let i = 0; i < a - 1; i++) {
         time += Object.values(dates)[i];
     }
     time += b;
-    if (time % 7 === 1) {
-        answer = "FRI";
-    }
-    if (time % 7 === 2) {
-        answer = "SAT";
-    }
-    if (time % 7 === 3) {
-        answer = "SUN";
-    }
-    if (time % 7 === 4) {
-        answer = "MON";
-    }
-    if (time % 7 === 5) {
-        answer = "TUE";
-    }
-    if (time % 7 === 6) {
-        answer = "WED";
-    }
+    let pointer = 0;
     if (time % 7 === 0) {
-        answer = "THU";
+        pointer = 0;
+    } else {
+        pointer += time % 7;
     }
+    answer = dayOfTheWeek[pointer];
     return answer
 }
